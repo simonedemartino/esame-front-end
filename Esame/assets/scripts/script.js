@@ -71,34 +71,28 @@ if (document.getElementById('testo-domanda')) {
 }
 
 function validaForm(event) {
-    // 1. Blocchiamo l'invio automatico del modulo che ricaricherebbe la pagina
     event.preventDefault();
-    
-    // 2. Recuperiamo i valori inseriti dall'utente nei campi di testo
     const nome = document.getElementById('nome').value.trim();
     const email = document.getElementById('email').value.trim();
     const messaggio = document.getElementById('messaggio').value.trim();
     const feedbackForm = document.getElementById('feedback-form');
-    
-    // 3. Resettiamo il box dei messaggi di feedback
+
     feedbackForm.classList.add('nascosto');
     feedbackForm.classList.remove('successo', 'errore');
     
-    // 4. CONTROLLO DI SICUREZZA: I campi sono vuoti?
+
     if (nome === "" || email === "" || messaggio === "") {
-        // Se manca anche un solo dato, mostriamo un messaggio di errore
         feedbackForm.textContent = "Attenzione: Tutti i campi obbligatori (Nome, Email e Messaggio) devono essere compilati! ⚠️";
         feedbackForm.classList.add('errore');
         feedbackForm.classList.remove('nascosto');
-        return; // Interrompe la funzione senza andare avanti
+        return; 
     }
     
-    // 5. Se i controlli passano con successo
+    
     feedbackForm.textContent = `Grazie mille ${nome}! Il tuo messaggio è stato inviato con successo. L'Autoscuola Agenzia Giustri ti risponderà al più presto. ✔️`;
     feedbackForm.classList.add('successo');
     feedbackForm.classList.remove('nascosto');
     
-    // 6. Resettiamo il modulo per lasciarlo pulito dopo l'invio
     document.getElementById('form-contatti').reset();
 
 }
