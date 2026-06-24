@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoscuola Giustri</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+        <a href="index.html">
+            <img src="/assets/images/logo.jpg" alt="Logo Autoscuola Giustri" class="logo-img">
+        </a>
+    </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="autoscuola.html">Autoscuola</a></li>
+                <li><a href="agenzia.html">Agenzia</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Apri menu">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+    <section class="patenti-intro">
+        <section class="page-header header-autoscuola">
+        <div class="page-header-content">
+            <h1>Autoscuola</h1>
+            <h2>Le nostre Patenti</h2>
+             <p>Prepariamo i conducenti di domani con lezioni teoriche dinamiche e guide personalizzate.</p>
+        </div>
+    </section>
+        
+        <section class="sezione-patenti">
+    <div class="patenti-container">
+        
+        <div class="card-patente">
+            <img src="assets/images/moto.png" alt="Patente A" class="patente-icona">
+            <div class="patente-testo">
+                <h3>Patente A</h3>
+                <p>Per i motocicli. Ti guidiamo dalle prime guide nel circuito fino all'esame pratico.</p>
+            </div>
+        </div>
+
+        <div class="card-patente">
+            <img src="assets/images/car2.png" alt="Patente B" class="patente-icona">
+            <div class="patente-testo">
+                <h3>Patente B</h3>
+                <p>La patente per la tua auto. Teoria e pratica con istruttori qualificati.</p>
+            </div>
+        </div>
+
+        <div class="card-patente">
+            <img src="assets/images/truck.png" alt="Patenti Superiori" class="patente-icona">
+            <div class="patente-testo">
+                <h3>Patenti Superiori</h3>
+                <p>C, D, E e CQC per chi vuole trasformare la guida nel proprio futuro professionale.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <hr class="separatore">
+
+    <section class="quiz-container">
+        <h2>Mettiti alla prova!</h2>
+        <p>Rispondi a questa domanda ufficiale del quiz ministeriale:</p>
+        
+        <div class="quiz-card">
+    <p id="testo-domanda" class="domanda"></p>
+    
+    <div class="quiz-risposte">
+        <button class="btn-quiz" onclick="controllaRisposta(true)">VERO</button>
+        <button class="btn-quiz" onclick="controllaRisposta(false)">FALSO</button>
+    </div>
+    
+    <div id="feedback-quiz" class="feedback nascosto"></div>
+    
+    <button id="btn-prossima" class="btn" style="margin-top: 20px; display: none;" onclick="caricaDomandaCasuale()">Prossima domanda</button>
+</div>
+            
+        <div id="feedback-quiz" class="feedback nascosto"></div>
+    </div>
+    </section>
+</main>
+        
+   <footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-colonna">
+            <h3>Autoscuola Giustri</h3>
+            <p>La tua patente e le tue pratiche auto, gestite con professionalità e competenza. Rilascio documenti in tempo reale grazie allo Sportello Telematico dell'Automobilista.</p>
+        </div>
+
+        <div class="footer-colonna">
+            <h3>Navigazione</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="autoscuola.html">Autoscuola & Quiz</a></li>
+                <li><a href="agenzia.html">Pratiche Auto</a></li>
+                <li><a href="contatti.html">Contatti & Orari</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-colonna">
+            <h3>I Nostri Contatti</h3>
+            <p>📍 Piazza Sant'Anna 5, 22070 Locate Varesino (CO)</p>
+            <p>📞 Tel: 0331 832082 / 0331 833214</p>
+            <p>📠 Fax: 0331 833684</p>
+            <p>✉️ Email: agenzia.giustri@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Autoscuola Giustri.</p>
+    </div>
+    </footer>
+
+    <script src="/assets/scripts/script.js"></script>
+</body>
+</html>
