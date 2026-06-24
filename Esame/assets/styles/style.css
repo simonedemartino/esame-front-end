@@ -307,12 +307,9 @@ nav .menu a:hover {
     display: none;
 }
 
-/* ==========================================
-   PAGINA AGENZIA - GRIGLIA SERVIZI
-   ========================================== */
 .sezione-servizi-agenzia {
     padding: 60px 5%;
-    background-color: #ffffff; /* Sfondo pulito per favorire la lettura */
+    background-color: #ffffff;
     color: #333333;
 }
 
@@ -335,19 +332,18 @@ nav .menu a:hover {
     margin-bottom: 50px;
 }
 
-/* La Griglia Automatica */
+
 .griglia-pratiche {
     display: grid;
-    /* Crea colonne fluide: su PC saranno 3 o 4, su tablet 2, su telefono 1 */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
 .pratica-item {
     display: flex;
-    align-items: center; /* Modificato: ora centra l'icona con il testo riga singola */
+    align-items: center; 
     gap: 15px;
-    padding: 15px 20px; /* Ho ridotto un po' il padding verticale per renderli più compatti */
+    padding: 15px 20px; 
     background-color: #f9f9f9;
     border-left: 4px solid #0099ff;
     border-radius: 0 8px 8px 0;
@@ -356,13 +352,13 @@ nav .menu a:hover {
 }
 
 .pratica-item:hover {
-    transform: translateX(5px); /* Si sposta leggermente a destra al passaggio del mouse */
+    transform: translateX(5px); 
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Testi della lista */
+
 .pratica-testo h4 {
-    margin: 0; /* Modificato: tolto il margine inferiore perché non c'è più il paragrafo */
+    margin: 0; 
     font-size: 1.1rem;
     color: #1a1a1a;
     font-weight: 500;
@@ -377,7 +373,6 @@ nav .menu a:hover {
 
 
 
-/*pagina contatti*/
 .contatti-sezione {
     padding: 60px 10%;
     text-align: center;
@@ -477,7 +472,7 @@ nav .menu a:hover {
     color: #721c24;
 }
 
-/*Footer */
+
 .site-footer {
     background-color: var(--blu-scuro, #1a2b4c); 
     color: #ffffff;
@@ -539,7 +534,6 @@ nav .menu a:hover {
     color: #9ca3af;
 }
 
-/* logo */
 .logo-container a {
     display: flex;
     align-items: center;
